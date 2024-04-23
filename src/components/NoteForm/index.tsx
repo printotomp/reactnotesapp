@@ -28,7 +28,7 @@ const NoteForm: React.FC<NoteFormProps> = ({ onSubmit, noteToEdit }) => {
               value={title}
               data-testid="form-input"
               className="form-input"
-              onChange={() => { }}
+              onChange={(e) => setTitle(e.target.value)}
             />
           </section>
           <section className="layout-row align-items-center justify-content-center mt-20 mr-20 ml-20">
@@ -38,7 +38,7 @@ const NoteForm: React.FC<NoteFormProps> = ({ onSubmit, noteToEdit }) => {
               value={content}
               data-testid="form-textarea"
               className="form-textarea"
-              onChange={() => { }}
+              onChange={(e) => setContent(e.target.value)}
             />
           </section>
           <section className="layout-row align-items-center justify-content-center mt-20 mr-20 ml-20">
